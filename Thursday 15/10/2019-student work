@@ -1,0 +1,38 @@
+
+	public class student { // new class called student
+		String name; //name is a to string
+		int age; // int is something that allows numbers 
+		boolean isVegetarian; //boolean is something that allows a true or false system to your code
+		
+	public student(String n,int a,boolean v ) { //constructor
+		this.name= n; //
+		this.age= a;
+		this.isVegetarian= v;
+		}
+	public student (int a,boolean v) {
+		this.name= "james";
+		this.age= a;
+		this.isVegetarian= v;
+	}
+	public int getOlder(int a,String reason) { //void means doesn't send information back // Int will give an integer // boolean will give a true or false answer 
+	return age++; //it increases age by 1 every time would be better as an int instead of a  void 
+	}
+	public String changeName(String nn){ // code bellow allows you to change the name 
+		this.name= nn;
+		System.out.println("name has been changed");// nothing will happens after the return
+		return name;
+	}
+	@Override // overrides the toString
+	public String toString() { 
+		return name;
+	
+  
+public class Testing {
+
+	public static void main(String[] args) { //code bellow is what allows the code in the other log to work and pour out an amount 
+		// TODO Auto-generated method stub
+		student example = new student(17,false); //this creates a new student aged 17 and isn't a vegetarian
+		
+		System.out.println(example); //name example  will be printed out
+		example.changeName(nn);
+	}
